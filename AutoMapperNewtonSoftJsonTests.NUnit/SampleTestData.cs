@@ -22,8 +22,8 @@ namespace AutoMapperNewtonsoftJsonTests
         {
             Id = 0,
             Description = "Description",
-            DoubleValue = 100,
-            FloatValue = 100f,
+            DoubleValue = 1000,
+            FloatValue = 100.0f,
             StringList = new List<string> { "string1", "string2", "string3", "string4", "string5" },
             Dictionary = _dictionary,
             ListOfDictionaries = new List<Dictionary<int, string>>
