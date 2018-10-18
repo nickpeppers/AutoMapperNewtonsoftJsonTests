@@ -1,0 +1,24 @@
+TestModel ManualClone: 7
+TestModels10 ManualClone: 1
+TestModels50 ManualClone: 0
+TestModels100 ManualClone: 0
+TestModels1000Sequencial ManualClone: 0
+TestModels10000Sequencial ManualClone: 3
+TestModels100000Sequencial ManualClone: 63
+=============================
+TestModel AutoMapperCloner: 692
+TestModels10 AutoMapperCloner: 51
+TestModels50 AutoMapperCloner: 6
+TestModels100 AutoMapperCloner: 6
+TestModels1000Sequencial AutoMapperCloner: 62
+TestModels10000Sequencial AutoMapperCloner: 717
+TestModels100000Sequencial AutoMapperCloner: 8070
+=============================
+TestModel NewtonsoftJson: 1171
+TestModels10 NewtonsoftJson: 11
+TestModels50 NewtonsoftJson: 37
+TestModels100 NewtonsoftJson: 77
+TestModels1000Sequencial NewtonsoftJson: 787
+TestModels10000Sequencial NewtonsoftJson: 8087
+TestModels100000Sequencial NewtonsoftJson: 80487
+=============================
