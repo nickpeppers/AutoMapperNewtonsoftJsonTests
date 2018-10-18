@@ -28,6 +28,7 @@ namespace AutoMapperNewtonsoftJsonTests
         {
             var testModel = SampleTestData.TestModels10.AutoMapperClone();
             Assert.NotNull(testModel);
+            Assert.AreEqual(10, testModel.Count);
         }
 
         [Test]
@@ -35,6 +36,7 @@ namespace AutoMapperNewtonsoftJsonTests
         {
             var testModel = SampleTestData.TestModels50.AutoMapperClone();
             Assert.NotNull(testModel);
+            Assert.AreEqual(50, testModel.Count);
         }
 
         [Test]
@@ -42,6 +44,7 @@ namespace AutoMapperNewtonsoftJsonTests
         {
             var testModel = SampleTestData.TestModels100.AutoMapperClone();
             Assert.NotNull(testModel);
+            Assert.AreEqual(100, testModel.Count);
         }
 
         [Test]

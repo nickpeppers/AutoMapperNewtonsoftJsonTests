@@ -4,19 +4,19 @@ using System.Collections.Generic;
 namespace AutoMapperNewtonsoftJsonTests
 {
     [TestFixture]
-    public class NewtonsoftCloneTests
+    public class ManualCloneTests
     {
         [Test]
         public void TestClone()
         {
-            var testModel = SampleTestData.TestModel.JsonClone();
+            var testModel = SampleTestData.TestModel.ManualClone();
             Assert.NotNull(testModel);
         }
 
         [Test]
         public void TestCloneList10()
         {
-            var testModel = SampleTestData.TestModels10.JsonClone();
+            var testModel = SampleTestData.TestModels10.ManualClone();
             Assert.NotNull(testModel);
             Assert.AreEqual(10, testModel.Count);
         }
@@ -24,7 +24,7 @@ namespace AutoMapperNewtonsoftJsonTests
         [Test]
         public void TestCloneList50()
         {
-            var testModel = SampleTestData.TestModels50.JsonClone();
+            var testModel = SampleTestData.TestModels50.ManualClone();
             Assert.NotNull(testModel);
             Assert.AreEqual(50, testModel.Count);
         }
@@ -32,7 +32,7 @@ namespace AutoMapperNewtonsoftJsonTests
         [Test]
         public void TestCloneList100()
         {
-            var testModel = SampleTestData.TestModels100.JsonClone();
+            var testModel = SampleTestData.TestModels100.ManualClone();
             Assert.NotNull(testModel);
             Assert.AreEqual(100, testModel.Count);
         }
@@ -43,7 +43,7 @@ namespace AutoMapperNewtonsoftJsonTests
             var list = new List<ITestModel>();
             for (int i = 0; i < 1000; i++)
             {
-                var testModel = SampleTestData.TestModel.JsonClone();
+                var testModel = SampleTestData.TestModel.ManualClone();
                 list.Add(testModel);
             }
             Assert.NotNull(list);
@@ -56,7 +56,7 @@ namespace AutoMapperNewtonsoftJsonTests
             var list = new List<ITestModel>();
             for (int i = 0; i < 10000; i++)
             {
-                var testModel = SampleTestData.TestModel.JsonClone();
+                var testModel = SampleTestData.TestModel.ManualClone();
                 list.Add(testModel);
             }
             Assert.NotNull(list);
@@ -69,7 +69,7 @@ namespace AutoMapperNewtonsoftJsonTests
             var list = new List<ITestModel>();
             for (int i = 0; i < 100000; i++)
             {
-                var testModel = SampleTestData.TestModel.JsonClone();
+                var testModel = SampleTestData.TestModel.ManualClone();
                 list.Add(testModel);
             }
             Assert.NotNull(list);
